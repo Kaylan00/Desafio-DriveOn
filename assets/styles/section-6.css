@@ -1,0 +1,69 @@
+.register {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem 0;
+}
+
+.register-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+  color: #5712A6;
+  transition: transform 100ms ease-in-out;
+
+  &:hover {
+    transform: translateY(-0.3125rem);
+    animation: register-colors 5s ease infinite;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.register-content div {
+  display: flex;
+}
+
+.register h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.arrow {
+  max-height: 3rem;
+  height: auto;
+  width: auto;
+  margin-left: 3rem;
+}
+
+.register-line {
+  max-width: 5.5rem;
+  width: auto;
+  margin-top: 2rem;
+}
+
+/* animations */
+
+.register.animate {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.register.animate-section {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes register-colors {
+  0%{
+    color: #5712A6;
+  }
+  50%{
+    color: #26E0FA;
+  }
+  100%{
+    color: #5712A6;
+  }
+}

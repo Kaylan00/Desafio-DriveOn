@@ -1,0 +1,89 @@
+.commitment {
+  display: flex;
+  position: relative;
+  margin: 10rem 0 4rem 5.2rem;
+}
+
+.commitment-info img {
+  width: 9rem;
+  height: 0.5625rem;
+}
+
+.commitment-info h2 {
+  color: #5712A6;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.commitment-info p {
+  color: #82809C;
+  line-height: 1.3;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.commitment-info strong {
+  position: relative;
+  color: #5712A6;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    .underline {
+      background-position: 0 0;
+    }
+  }
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: -0.625rem;
+  display: inline-block;
+  width: 100%;
+  height: 0.4rem;
+  border-left: 1.2rem solid #7D21E8;
+  background-image: linear-gradient(to left, #26E0FA, #26E0FA 50%, #7D21E8 50%, #7D21E8);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.commitment-info button {
+  border: transparent;
+  color: #2678FA;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding-left: 0;
+  cursor: pointer;
+  transition: 50ms ease-in-out;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.img-background-commitment {
+  display: inline-block;
+  max-height: 100vh;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: -22rem;
+  right: 0;
+}
+
+/* animations */
+
+.commitment.animate .commitment-info {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.commitment.animate-section .commitment-info {
+  opacity: 1;
+  transform: translateX(0);
+}

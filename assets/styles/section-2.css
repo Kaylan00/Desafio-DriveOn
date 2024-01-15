@@ -1,0 +1,55 @@
+.get-started {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 5.2rem;
+}
+
+.division img {
+  width: 8.5rem;
+  height: 0.5625rem;
+}
+
+.get-started h2 {
+  color: #5712A6;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+#get-started-cards {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+#get-started-cards img {
+  width: 10rem;
+  height: 10rem;
+}
+
+#get-started-cards h3 {
+  margin: 1rem 0;
+  color: #5712A6;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#get-started-cards p {
+  color: #82809C;
+  line-height: 1.3;
+}
+
+/* animations */
+
+.get-started.animate {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.get-started.animate-section {
+  opacity: 1;
+  transform: translateX(0);
+}
